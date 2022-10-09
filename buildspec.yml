@@ -9,11 +9,16 @@ phases:
       - echo Nothing to do in the pre_build phase...
   build:
     commands:
-      - echo Build started on 'date'
+      - echo Build started on `date`
       - mvn package
   post_build:
     commands:
-      - echo Build completed on 'date'
+      - echo Build completed on `date`
 artifacts:
   files:
     - target/CounterWebApp.war
+    - appspec.yml
+    - scripts/install_tomcat.sh
+    - scripts/copy.sh
+    - scripts/start.sh
+    - scripts/stop.sh
