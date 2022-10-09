@@ -1,7 +1,3 @@
-# MavenCounterWebApp
-MavenCounterWebApp
-Trigerring job by SCM polling Test
-github-webhook/
+AWS DevOps Demo - Maven App - Tomcat
 
-test commit here
 
